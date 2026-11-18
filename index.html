@@ -3,33 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ikoi by Asho</title>
+  <title>Ikoi by Asho | Scented Soy Candles &amp; Gifts in Kenya</title>
+  <meta name="description" content="Discover hand-poured scented soy candles, custom scents and thoughtful candle gifts from Ikoi by Asho in Kenya—made for rest, warmth and ease.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ikoi by Asho | Scented Soy Candles &amp; Gifts in Kenya">
+  <meta property="og:description" content="Hand-poured scented soy candles, custom scents and thoughtful gifts to bring a little rest and warmth to everyday life.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Fraunces:wght@600&family=Inter:wght@400;500&family=Noto+Serif+JP:wght@500&display=swap">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕯️</text></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
     <a class="logo logo-wordmark" href="#top" aria-label="Ikoi by Asho, home"><img src="Logo/ikoi-elegant-1-line-wordmark.svg" alt=""></a>
-    <nav>
-      <a href="#collection">Collection</a>
-      <a class="nav-cta" href="#varieties">Specialty candles</a>
-      <a href="#craft">Our craft</a>
-      <a href="#events">Events</a>
-      <a href="#playful">Custom &amp; gifts</a>
+    <nav id="primary-navigation" aria-label="Main navigation">
+      <a href="#collection">Shop all candles</a>
+      <details class="nav-scent-group">
+        <summary>Shop by scent</summary>
+        <div class="nav-scent-list">
+          <a href="#scent-hinoki-morning"><span>Hinoki Morning<small>KSh 1,500</small></span></a>
+          <a href="#scent-yuzu-light"><span>Yuzu Light<small>KSh 1,500</small></span></a>
+          <a href="#scent-matcha-hour"><span>Matcha Hour<small>KSh 1,500</small></span></a>
+          <a href="#scent-lamu-breeze"><span>Lamu Breeze<small>Planned · Price TBC</small></span></a>
+          <a href="#scent-mara-sunrise"><span>Mara Sunrise<small>Planned · Price TBC</small></span></a>
+          <a href="#scent-karura-rain"><span>Karura Rain<small>Planned · Price TBC</small></span></a>
+          <a href="#scent-naivasha-bloom"><span>Naivasha Bloom<small>Planned · Price TBC</small></span></a>
+          <a href="#scent-kilifi-dusk"><span>Kilifi Dusk<small>Planned · Price TBC</small></span></a>
+          <a href="#scent-infinite-sakura"><span>Infinite Sakura<small>Planned · Price TBC</small></span></a>
+        </div>
+      </details>
+      <details class="nav-product-group">
+        <summary>Shop by product</summary>
+        <div class="nav-product-list">
+          <a href="#cake-candles"><span>Cake candles<small>Price on request</small></span></a>
+          <a href="#chocolate-bar-wax-melts"><span>Chocolate-bar wax melts<small>KSh 2,500</small></span></a>
+          <a href="#blooming-tins"><span>Blooming tins<small>Price on request</small></span></a>
+        </div>
+      </details>
+      <a href="#bundles">Bundles &amp; discounts</a>
+      <a href="about.html">Our story</a>
+      <a href="#events">Candle workshops</a>
+      <a href="#candle-journal">Candle care</a>
+      <a href="#playful">Custom candles</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="glow-toggle" id="glow" aria-pressed="false"><span>Light the candle</span></button>
   </header>
+  <div class="menu-backdrop" id="menu-backdrop" aria-hidden="true"></div>
 
   <main id="top">
     <section class="hero wrap">
       <div>
-        <h1>Bring home a softer glow.</h1>
-        <p>Hand-poured soy candles, thoughtfully scented for slower evenings and calmer moments.</p>
+        <h1>Light a moment of calm.</h1>
+        <p>Hand-poured scented soy candles in Kenya for quiet evenings and thoughtful gifts.</p>
         <div class="actions">
-          <a class="button" href="#collection">Explore the collection</a>
-          <a class="button ghost" href="#playful">Custom &amp; gift candles</a>
+          <a class="button" href="#collection">Explore soy candles</a>
+          <a class="button ghost" href="#playful">Create a custom candle gift</a>
         </div>
       </div>
       <img src="images/wellness-candle-2.jpg" alt="A lit candle held during a quiet moment at home">
@@ -38,9 +69,9 @@
     <section class="jar-showcase" aria-labelledby="jar-showcase-title">
       <div class="wrap jar-showcase-content">
         <div class="jar-showcase-copy">
-          <p class="jar-kicker">Made by hand, poured with care</p>
-          <h2 id="jar-showcase-title">Homemade candles</h2>
-          <p>Small-batch soy candles for a softer glow at home.</p>
+          <p class="jar-kicker">Scented soy candles, poured by hand</p>
+          <h2 id="jar-showcase-title">Candles for slower moments</h2>
+          <p>Thoughtfully scented soy candles for quiet evenings, gentle rituals and a little space to breathe.</p>
         </div>
         <div class="jar-mockups">
           <figure class="jar-mockup">
@@ -58,89 +89,181 @@
 
     <section class="story wrap">
       <div>
-      <h2>Why Ikoi exists</h2>
+      <h2>A little room to breathe</h2>
       <p class="meaning"><span class="kanji" lang="ja">憩い</span> <strong>ikoi</strong> <em>(noun, Japanese)</em><br>Rest and relaxation; a pause to breathe and feel at ease.</p>
-      <p>Ikoi grew out of an experience on a personal healing journey. It is a small studio making handmade soy wax candles, made to bring calmness, peace, joy and relief to the people who light them.</p>
-      <p>Every candle can be customised to any scent you prefer, so it can suit a quiet night in, a romantic date, or a gift for someone else or for yourself.</p>
+      <p>Ikoi by Asho is a Kenyan candle studio creating hand-poured scented soy candles for moments of rest, calm and connection.</p>
+      <a class="button ghost" href="about.html">Learn more about our story</a>
       </div>
       <img src="images/candle-making-2.jpg" alt="Warm wax being poured into a candle jar by hand">
     </section>
 
     <section id="collection" class="collection wrap">
-      <h2>Three scents for quiet moods</h2>
-      <div class="cards">
-        <article class="card">
+      <h2>Find your scent, find your ikoi</h2>
+      <div class="cards scent-collection">
+        <article class="card" id="scent-hinoki-morning">
           <img src="images/Mockups/branded-jar-7.png" alt="A branded Ikoi candle on a warm wooden surface" loading="lazy" decoding="async">
           <h3>Hinoki Morning</h3>
-          <p>Hinoki cypress, cedar and moss</p>
-          <p class="price-row"><span>Jar special</span><strong>KSh 1,500</strong></p>
-          <a class="pick" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27d%20like%20to%20order%20Hinoki%20Morning.">Order Hinoki Morning</a>
+          <p>Hinoki cypress, cedar and moss for a soft, woodsy pause.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27d%20like%20to%20order%20Hinoki%20Morning.">Order Hinoki Morning</a>
         </article>
-        <article class="card">
+        <article class="card" id="scent-yuzu-light">
           <img src="images/Mockups/branded-jar-3.png" alt="A branded Ikoi candle being lit with a match" loading="lazy" decoding="async">
           <h3>Yuzu Light</h3>
-          <p>Yuzu peel, bergamot and white tea</p>
-          <p class="price-row"><span>Jar special</span><strong>KSh 1,500</strong></p>
-          <a class="pick" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27d%20like%20to%20order%20Yuzu%20Light.">Order Yuzu Light</a>
+          <p>Yuzu peel, bergamot and white tea for a bright, gentle lift.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27d%20like%20to%20order%20Yuzu%20Light.">Order Yuzu Light</a>
         </article>
-        <article class="card">
+        <article class="card" id="scent-matcha-hour">
           <img src="images/Mockups/branded-jar-8.png" alt="A branded Ikoi candle beside a plant and linen pouch" loading="lazy" decoding="async">
           <h3>Matcha Hour</h3>
-          <p>Green tea, fig leaf and bamboo</p>
-          <p class="price-row"><span>Jar special</span><strong>KSh 1,500</strong></p>
-          <a class="pick" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27d%20like%20to%20order%20Matcha%20Hour.">Order Matcha Hour</a>
+          <p>Green tea, fig leaf and bamboo for a grounded, leafy calm.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27d%20like%20to%20order%20Matcha%20Hour.">Order Matcha Hour</a>
+        </article>
+        <article class="card scent-future" id="scent-lamu-breeze">
+          <img class="scent-idea-photo" src="images/Mockups/branded-jar-7.png" alt="Ikoi branded candle jar used as a placeholder for the Lamu Breeze scent idea" loading="lazy" decoding="async">
+          <h3>Lamu Breeze</h3>
+          <p>Bright citrus, soft coconut, and airy sea-salt notes inspired by the coast.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Lamu%20Breeze%20scent%20idea.%20Please%20confirm%20availability%20and%20price.">Ask about this scent</a>
+        </article>
+        <article class="card scent-future" id="scent-mara-sunrise">
+          <img class="scent-idea-photo" src="images/Mockups/branded-jar-3.png" alt="Ikoi branded candle jar used as a placeholder for the Mara Sunrise scent idea" loading="lazy" decoding="async">
+          <h3>Mara Sunrise</h3>
+          <p>Wild-berry brightness, warm amber, and soft woods inspired by the open plains.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Mara%20Sunrise%20scent%20idea.%20Please%20confirm%20availability%20and%20price.">Ask about this scent</a>
+        </article>
+        <article class="card scent-future" id="scent-karura-rain">
+          <img class="scent-idea-photo" src="images/Mockups/branded-jar-8.png" alt="Ikoi branded candle jar used as a placeholder for the Karura Rain scent idea" loading="lazy" decoding="async">
+          <h3>Karura Rain</h3>
+          <p>Green leaves, eucalyptus, and earthy cedar inspired by a forest after rain.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Karura%20Rain%20scent%20idea.%20Please%20confirm%20availability%20and%20price.">Ask about this scent</a>
+        </article>
+        <article class="card scent-future" id="scent-naivasha-bloom">
+          <img class="scent-idea-photo" src="images/Mockups/branded-jar-7.png" alt="Ikoi branded candle jar used as a placeholder for the Naivasha Bloom scent idea" loading="lazy" decoding="async">
+          <h3>Naivasha Bloom</h3>
+          <p>Water lily, fresh fig leaf, and soft musk inspired by lakeside gardens.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Naivasha%20Bloom%20scent%20idea.%20Please%20confirm%20availability%20and%20price.">Ask about this scent</a>
+        </article>
+        <article class="card scent-future" id="scent-kilifi-dusk">
+          <img class="scent-idea-photo" src="images/Mockups/branded-jar-3.png" alt="Ikoi branded candle jar used as a placeholder for the Kilifi Dusk scent idea" loading="lazy" decoding="async">
+          <h3>Kilifi Dusk</h3>
+          <p>Mandarin, jasmine, and creamy sandalwood inspired by a warm coastal evening.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Kilifi%20Dusk%20scent%20idea.%20Please%20confirm%20availability%20and%20price.">Ask about this scent</a>
+        </article>
+        <article class="card scent-future" id="scent-infinite-sakura">
+          <img class="scent-idea-photo" src="images/Mockups/branded-jar-8.png" alt="Ikoi branded candle jar used as a placeholder for the Infinite Sakura scent" loading="lazy" decoding="async">
+          <h3>Infinite Sakura</h3>
+          <p>Sakura blossom, white tea, and gentle woods for a soft, renewing pause.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Infinite%20Sakura%20scent%20idea.%20Please%20confirm%20availability%20and%20price.">Ask about this scent</a>
         </article>
       </div>
 
-      <h2 class="varieties-title" id="varieties">Specialty candles &amp; gifts</h2>
+      <h2 class="varieties-title" id="varieties">Specialty candles &amp; thoughtful gifts</h2>
       <div class="treats">
-        <article class="treat">
+        <article class="treat" id="cake-candles">
           <img src="images/candle-12.jpg" alt="Strawberry and cake-shaped candles in a basket" loading="lazy" decoding="async">
           <h3>Cake candles</h3>
-          <p>Tiny desserts that burn. Strawberry, cream and cocoa.</p>
+          <p>Playful dessert-shaped candles with sweet strawberry, cream and cocoa notes.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20cake%20candles.%20Please%20share%20the%20available%20options%20and%20prices.">Ask about cake candles</a>
         </article>
-        <article class="treat">
+        <article class="treat" id="chocolate-bar-wax-melts">
           <img src="images/candle-13.jpg" alt="Chocolate-bar shaped wax melts on a dish" loading="lazy" decoding="async">
           <h3>Chocolate-bar wax melts</h3>
-          <p>Snap off a square and melt it. Pick your own colors.</p>
-          <p class="price-row"><span>Wax melt bundle</span><strong>KSh 2,500</strong></p>
+          <p>Snap off a square, melt it, and choose colours to suit your mood or celebration.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27d%20like%20to%20order%20the%20chocolate-bar%20wax%20melt%20bundle.">Ask about wax melts</a>
         </article>
-        <article class="treat">
+        <article class="treat" id="blooming-tins">
           <img src="images/candle-5.jpg" alt="Tin candles topped with dried flowers" loading="lazy" decoding="async">
           <h3>Blooming tins</h3>
-          <p>Soy wax tins with dried flowers pressed into the top.</p>
+          <p>Hand-poured soy wax candles topped with pressed dried flowers.</p>
+          <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20blooming%20tins.%20Please%20share%20the%20available%20options%20and%20prices.">Ask about blooming tins</a>
         </article>
       </div>
     </section>
 
+    <section id="bundles" class="bundle-section" aria-labelledby="bundle-title">
+      <div class="bundle-inner">
+        <p class="bundle-kicker">A little more to love</p>
+        <h2 id="bundle-title">Build a bundle, save a little.</h2>
+        <p class="bundle-intro">Pair your favourite scents or make it a gift. These suggested bundle prices are a starting point, based on the current individual prices—adjust them to suit your final offers.</p>
+        <div class="bundle-grid">
+          <article class="bundle-card">
+            <div class="bundle-image">
+              <img src="images/Mockups/branded-jar-7.png" alt="An Ikoi scented soy candle for a two-candle bundle" loading="lazy" decoding="async">
+              <span class="bundle-badge">Suggested 10% off</span>
+            </div>
+            <div class="bundle-card-content">
+              <p class="bundle-label">The scent discovery duo</p>
+              <h3>Pick any two scented soy candles</h3>
+              <p>Choose two favourites for a cosy pair or share one with someone you love.</p>
+              <p class="bundle-price"><span class="bundle-was">KSh 3,000</span><strong>KSh 2,700</strong><span class="bundle-save">Save KSh 300</span></p>
+              <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Scent%20Discovery%20Duo.%20Please%20confirm%20availability%20and%20final%20bundle%20price.">Ask about this bundle</a>
+            </div>
+          </article>
+          <article class="bundle-card">
+            <div class="bundle-image">
+              <img src="images/Mockups/branded-jar-8.png" alt="An Ikoi candle in a leafy setting for a three-candle bundle" loading="lazy" decoding="async">
+              <span class="bundle-badge">Suggested 15% off</span>
+            </div>
+            <div class="bundle-card-content">
+              <p class="bundle-label">The Ikoi trio</p>
+              <h3>Choose any three candle scents</h3>
+              <p>Explore the full collection and find a scent for every kind of moment.</p>
+              <p class="bundle-price"><span class="bundle-was">KSh 4,500</span><strong>KSh 3,825</strong><span class="bundle-save">Save KSh 675</span></p>
+              <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Ikoi%20Trio.%20Please%20confirm%20availability%20and%20final%20bundle%20price.">Ask about this bundle</a>
+            </div>
+          </article>
+          <article class="bundle-card">
+            <div class="bundle-image">
+              <img src="images/candle-13.jpg" alt="Chocolate-bar shaped wax melts for a candle and wax-melt gift set" loading="lazy" decoding="async">
+              <span class="bundle-badge">Suggested 10% off</span>
+            </div>
+            <div class="bundle-card-content">
+              <p class="bundle-label">The glow &amp; melt set</p>
+              <h3>Pair a candle with wax melts</h3>
+              <p>A scented soy candle and chocolate-bar wax melts make a thoughtful gift duo.</p>
+              <p class="bundle-price"><span class="bundle-was">KSh 4,000</span><strong>KSh 3,600</strong><span class="bundle-save">Save KSh 400</span></p>
+              <a class="bundle-order" href="https://wa.me/254727720317?text=Hi%20Ikoi%2C%20I%27m%20interested%20in%20the%20Glow%20and%20Melt%20Set.%20Please%20confirm%20availability%20and%20final%20bundle%20price.">Ask about this bundle</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="craft" class="craft">
-      <h2>Find your moment of Ikoi</h2>
+      <h2>Made with care</h2>
       <ul class="craft-values">
         <li>
-          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M12 32c3-8 8-16 17-24"/><path d="M17 23c-5 0-8-3-9-8 6-.4 10 2 11 7"/><path d="M22 15c0-5 3-9 8-11 1 6-1 10-6 13"/></svg>
-          <span>Thoughtfully selected fragrances.</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M20 4c-4 7-10 14-10 21a10 10 0 0 0 20 0c0-7-6-14-10-21Z"/><path d="m7 5 1.5 3.5L12 10l-3.5 1.5L7 15l-1.5-3.5L2 10l3.5-1.5L7 5Z"/></svg>
+          <span>Paraffin-free</span>
         </li>
         <li>
-          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M20 5c3 4 5 7 0 11-5-4-3-7 0-11Z"/><path d="M12 17h16v16H12zM10 33h20M20 17v4"/></svg>
-          <span>Carefully handcrafted products.</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M8 31C8 18 17 9 31 8c0 14-9 23-22 23Z"/><path d="M8 31 25 14"/></svg>
+          <span>Vegan</span>
         </li>
         <li>
-          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M25 7a13 13 0 1 0 8 22A14 14 0 0 1 25 7Z"/><path d="M9 33h22M13 37h14"/></svg>
-          <span>Inspired by everyday moments of calm.</span>
+          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M20 35s11-10 11-21a11 11 0 1 0-22 0c0 11 11 21 11 21Z"/><circle cx="20" cy="14" r="3"/></svg>
+          <span>Made in Kenya</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M14 14h12v19H14zM17 14V9h6v5M7 17a15 15 0 0 1 22-7M29 10l-1-5M29 10l-5 1M33 24a15 15 0 0 1-22 8M11 32l1 5M11 32l5-1"/></svg>
+          <span>Reusable jars</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="21" r="15"/><path d="M20 35V20M20 26c-7 0-10-4-10-9 6-.5 10 2 10 9ZM20 22c0-7 4-11 10-11 0 6-3 10-10 11Z"/></svg>
+          <span>Sustainable</span>
         </li>
       </ul>
     </section>
 
     <section id="events" class="events wrap">
-      <p class="events-kicker">Gather, make, and unwind</p>
-      <h2>Coming soon</h2>
+      <p class="events-kicker">Gather, pour, and unwind</p>
+      <h2>Candle-making workshops, coming soon</h2>
       <article class="event-card">
         <div>
           <span class="event-status">Dates to be announced</span>
-          <h3>Weekend candle-making pop-ups</h3>
-          <p>Make your own scented candle, choose a blend you love, and enjoy a drink or a meal along the way. We’re preparing our first sessions now.</p>
+          <h3>Create your own scented soy candle</h3>
+          <p>Join a relaxed candle-making workshop in Kenya. Blend a fragrance you love, pour a soy candle by hand, and enjoy a little time to slow down. Our first dates are on the way.</p>
         </div>
-        <a class="button" href="mailto:hello@ikoibyasho.com?subject=Keep%20me%20updated%20about%20candle-making%20events">Get event updates</a>
+        <a class="button" href="mailto:hello@ikoibyasho.com?subject=Keep%20me%20updated%20about%20candle-making%20workshops">Get workshop updates</a>
       </article>
       <h3 class="event-gallery-title">A little glimpse of what’s in the making</h3>
       <div class="event-gallery">
@@ -150,18 +273,71 @@
       </div>
     </section>
 
+    <section id="candle-journal" class="candle-journal wrap" aria-labelledby="candle-journal-title">
+      <p class="journal-kicker">The Ikoi candle journal</p>
+      <h2 id="candle-journal-title">A little guide to candle care</h2>
+      <p class="journal-intro">Simple fire-safety and candle-care tips to help you enjoy every glow with care. Always follow the instructions provided with your candle.</p>
+      <div class="journal-grid">
+        <article class="journal-card">
+          <p class="journal-meta">Fire safety · A quick read</p>
+          <h3>A safer, softer glow</h3>
+          <p>Keep these simple precautions in mind whenever you light a candle at home.</p>
+          <details>
+            <summary>Read the tips</summary>
+            <ul>
+              <li>Keep a burning candle within sight, and extinguish it before leaving the room or going to sleep.</li>
+              <li>Place it on a stable, heat-resistant surface, away from drafts and anything that can catch fire.</li>
+              <li>Keep candles out of reach of children and pets, and leave space between burning candles.</li>
+              <li>Never move a burning candle or pour water on hot wax. Extinguish the flame carefully and let the vessel cool before handling.</li>
+            </ul>
+          </details>
+        </article>
+        <article class="journal-card">
+          <p class="journal-meta">Candle care · A quick read</p>
+          <h3>Make the first burn count</h3>
+          <p>A little patience at the beginning can help your candle burn more evenly over time.</p>
+          <details>
+            <summary>Read the tips</summary>
+            <ul>
+              <li>Set your candle on a level, heat-resistant surface away from moving air.</li>
+              <li>For an even melt, let the wax melt across the surface on the first burn, while following the candle’s care label.</li>
+              <li>Keep each burn to no more than four hours, or less if the candle’s instructions say so.</li>
+              <li>Let the candle cool completely before lighting it again.</li>
+            </ul>
+          </details>
+        </article>
+        <article class="journal-card">
+          <p class="journal-meta">Candle care · A quick read</p>
+          <h3>Keep your candle at its best</h3>
+          <p>Small habits between burns help keep your candle tidy and ready for your next moment of ikoi.</p>
+          <details>
+            <summary>Read the tips</summary>
+            <ul>
+              <li>When the candle is completely cool, trim the wick to about ¼ inch before lighting, unless its care label advises otherwise.</li>
+              <li>Keep the wax free of wick trimmings, matches and other debris.</li>
+              <li>Stop burning when about ½ inch of wax remains, or sooner if the candle’s instructions recommend it.</li>
+              <li>Do not use a candle if its vessel is cracked or damaged.</li>
+            </ul>
+          </details>
+        </article>
+      </div>
+    </section>
+
     <section id="playful" class="play">
       <div class="wrap">
         <div class="play-intro">
-          <h2>Custom candles, made for you.</h2>
-          <p>Choose the scent you love, or ask for one blended for a season or an occasion. Gift a candle to someone, keep one for yourself, or set the mood for a date night.</p>
-          <p>Want to make your own? <a href="#events">See our upcoming candle-making sessions.</a></p>
+          <h2>Custom candles, your way.</h2>
+          <p>Choose a fragrance you love or request a custom scent for a celebration, a thoughtful gift, or a quiet night in. Each candle brings a little rest and warmth to the everyday.</p>
+          <div class="play-links" aria-label="Explore more candle experiences">
+            <a href="#varieties">Shop specialty candles &amp; gifts</a>
+            <a href="#events">Explore candle-making workshops</a>
+          </div>
           <a class="button" href="#custom-request">Request a custom candle</a>
         </div>
 
         <form class="custom-request" id="custom-request" aria-labelledby="custom-request-title">
-          <h3 id="custom-request-title">Tell us what you have in mind</h3>
-          <p>Share a few details and we’ll help you create something personal.</p>
+          <h3 id="custom-request-title">Share your candle idea</h3>
+          <p>Share your scent, occasion or candle gift idea, and we’ll help bring it to life.</p>
           <div class="custom-request-fields">
             <label>
               Your name
@@ -175,24 +351,24 @@
               What are you looking for?
               <select name="candle" required>
                 <option value="">Choose one</option>
-                <option>Custom scented candle</option>
-                <option>Gift candle</option>
+                <option>Custom scented soy candle</option>
+                <option>Handmade candle gift</option>
                 <option>Cake candle</option>
                 <option>Blooming tin</option>
                 <option>Something else</option>
               </select>
             </label>
             <label>
-              Scent or occasion <span class="optional">(optional)</span>
+              Preferred scent or occasion <span class="optional">(optional)</span>
               <input type="text" name="scent" placeholder="e.g. lavender, a birthday gift">
             </label>
             <label class="custom-request-notes">
-              Anything else we should know? <span class="optional">(optional)</span>
+              Anything else you’d like us to know? <span class="optional">(optional)</span>
               <textarea name="details" rows="4" placeholder="Share colors, quantities, or other ideas"></textarea>
             </label>
           </div>
           <button class="button" type="submit">Continue by email</button>
-          <p class="form-note">Your email app will open with your request ready to send.</p>
+          <p class="form-note">Your email app will open with your custom candle request ready to send.</p>
         </form>
 
         <div class="gallery">
@@ -202,22 +378,24 @@
           <img src="images/custom-gifts.jpg" alt="A handmade candle being packed as a gift">
           <img src="images/scented-candle-3.jpg" alt="A candle glowing during a quiet, restful moment">
           <img src="images/playful-candle-6.jpg" alt="A candle gift being carefully wrapped">
-        </div><p><a class="button" href="https://wa.me/254727720317">Order on WhatsApp</a></p>
+        </div><p><a class="button" href="https://wa.me/254727720317">Ask about candles on WhatsApp</a></p>
        </div>
     </section>
   </main>
 
   <footer id="contact">
-    <h2>Order or ask about custom gifts</h2>
-    <a class="button" href="mailto:hello@ikoibyasho.com">hello@ikoibyasho.com</a>
-    <p><small>© Ikoi by Asho. Poured with care.</small></p>
+    <h2>Bring a little ikoi home</h2>
+    <a class="button" href="mailto:hello@ikoibyasho.com">Ask about candles and gifts</a>
+    <p><small>Hand-poured scented soy candles and thoughtful gifts from Ikoi by Asho, Kenya.</small></p>
   </footer>
 <dialog id="lightbox"><img alt=""></dialog>
   <script>
     const btn=document.getElementById('glow');
-    function set(on){document.body.classList.toggle('glow',on);btn.setAttribute('aria-pressed',on);btn.firstChild.textContent=on?'Blow it out':'Light the candle';try{localStorage.setItem('glow',on?'1':'0')}catch(e){}}
-    try{if(localStorage.getItem('glow')==='1')set(true)}catch(e){}
-    btn.onclick=()=>set(!document.body.classList.contains('glow'));
+    function set(lit){document.body.classList.toggle('lit',lit);document.body.classList.toggle('glow',!lit);btn.setAttribute('aria-pressed',lit);btn.firstChild.textContent=lit?'Blow it out':'Light the candle';try{localStorage.setItem('candle-lit',lit?'1':'0')}catch(e){}}
+    let candleLit=false;
+    try{candleLit=localStorage.getItem('candle-lit')==='1'}catch(e){}
+    set(candleLit);
+    btn.onclick=()=>set(!document.body.classList.contains('lit'));
     const customForm=document.getElementById('custom-request');
     customForm.addEventListener('submit',event=>{
       event.preventDefault();
@@ -233,6 +411,73 @@
       i.addEventListener('keydown',e=>{if(e.key==='Enter')open()});
     });
     lb.addEventListener('click',()=>lb.close());
+    const header=document.querySelector('header');
+    const menuToggle=document.getElementById('menu-toggle');
+    const primaryNavigation=document.getElementById('primary-navigation');
+    function closeNavigation(restoreFocus=false){
+      header.classList.remove('is-menu-open');
+      document.body.classList.remove('menu-open');
+      menuToggle.setAttribute('aria-expanded','false');
+      menuToggle.setAttribute('aria-label','Open navigation menu');
+      if(restoreFocus)menuToggle.focus();
+    }
+    const menuBackdrop=document.getElementById('menu-backdrop');
+    menuBackdrop.addEventListener('click',()=>closeNavigation(true));
+    menuToggle.addEventListener('click',()=>{
+      const isOpen=menuToggle.getAttribute('aria-expanded')==='true';
+      if(isOpen)closeNavigation(true);
+      else{
+        header.classList.add('is-menu-open');
+        document.body.classList.add('menu-open');
+        menuToggle.setAttribute('aria-expanded','true');
+        menuToggle.setAttribute('aria-label','Close navigation menu');
+        primaryNavigation.querySelector('a,summary').focus({preventScroll:true});
+      }
+    });
+    primaryNavigation.addEventListener('click',event=>{
+      if(event.target.closest('a'))closeNavigation();
+    });
+    document.addEventListener('keydown',event=>{
+      if(event.key==='Escape'&&menuToggle.getAttribute('aria-expanded')==='true')closeNavigation(true);
+    });
+    const navTargets=[...header.querySelectorAll('nav a[href^="#"]')].map(link=>({link,target:document.querySelector(link.hash)})).filter(item=>item.target);
+    let navUpdatePending=false;
+    let previousScrollY=window.scrollY;
+    function updateNavigation(){
+      const currentScrollY=window.scrollY;
+      if(header.classList.contains('is-menu-open')){
+        previousScrollY=currentScrollY;
+        return;
+      }
+      header.classList.toggle('is-scrolled',currentScrollY>24);
+      if(currentScrollY<=24)header.classList.remove('is-hidden');
+      else if(currentScrollY>previousScrollY+4){
+        header.classList.add('is-hidden');
+        closeNavigation();
+      }
+      else if(currentScrollY<previousScrollY-4)header.classList.remove('is-hidden');
+      previousScrollY=currentScrollY;
+      const activeLine=header.offsetHeight+24;
+      let activeTarget=null;
+      navTargets.forEach(item=>{
+        if(item.target.getBoundingClientRect().top<=activeLine)activeTarget=item.target;
+      });
+      if(Math.ceil(window.scrollY+window.innerHeight)>=document.documentElement.scrollHeight-1)activeTarget=navTargets[navTargets.length-1].target;
+      navTargets.forEach(item=>{
+        if(item.target===activeTarget)item.link.setAttribute('aria-current','location');
+        else item.link.removeAttribute('aria-current');
+      });
+    }
+    window.addEventListener('scroll',()=>{
+      if(navUpdatePending)return;
+      navUpdatePending=true;
+      requestAnimationFrame(()=>{
+        updateNavigation();
+        navUpdatePending=false;
+      });
+    },{passive:true});
+    window.addEventListener('resize',updateNavigation);
+    updateNavigation();
   </script>
 </body>
 </html>
