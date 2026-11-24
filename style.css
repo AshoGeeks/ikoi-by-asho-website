@@ -336,3 +336,6 @@ footer .button{background:var(--accent-strong);color:#fff}
 
 @media(max-width:760px){header.is-scrolled .logo-wordmark{width:88px;height:68px}}
 @media(max-width:480px){header.is-scrolled .logo-wordmark{width:78px;height:60px}}
+.scent-future .price-row{display:none}
+.scent-future h3::after{content:"Coming soon";display:inline-block;margin-left:.6rem;padding:.15rem .6rem;border:1px solid currentColor;border-radius:999px;font:500 .7rem/1.4 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;vertical-align:middle;opacity:.85}
+body.glow .hero p{color:#d8d3c6}
